@@ -10,7 +10,7 @@
   "neobase": ">=4.0.0",
   "type": "app",
   "category": "Outils",
-  "syncMode": "fusion",
+  "syncMode": "aucune",
   "syncInfo": "Rien : le texte et sa traduction restent seulement à l'écran.",
   "mobile": true,
   "system": false,
