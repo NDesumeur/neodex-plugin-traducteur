@@ -29,5 +29,16 @@
  "Turc": "Turkish",
  "Ukrainien": "Ukrainian",
  "caractères": "characters",
- "Écris ou colle un texte…": "Write or paste a text…"
+ "Écris ou colle un texte…": "Write or paste a text…",
+ "Bonjour tout le monde": "Bonjour tout le monde",
+ "Traduire le texte copié": "Translate the copied text",
+ "Écouter": "Listen",
+ "Écouter la prononciation": "Listen to the pronunciation",
+ "Ctrl+Alt+T : traduit le texte copié, depuis toute autre fenêtre": "Ctrl+Alt+T: translates the copied text, from any other window",
+ "Coller et traduire": "Paste and translate",
+ "La lecture à voix haute n’est pas disponible ici": "Reading aloud is not available here",
+ "Pas de voix": "No",
+ "sur ce PC : la voix par défaut lit le texte": "voice on this PC: the default voice reads the text",
+ "NeoDex doit pouvoir lire le presse-papiers : accepte l’autorisation « Presse-papiers » du Traducteur": "NeoDex must be able to read the clipboard: accept the Translator's “Clipboard” permission",
+ "Le presse-papiers est vide : copie d’abord un texte (Ctrl+C)": "The clipboard is empty: copy a text first (Ctrl+C)"
 }

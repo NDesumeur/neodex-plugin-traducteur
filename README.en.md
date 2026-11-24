@@ -4,6 +4,10 @@ Translates text between 16 languages as you type, with automatic detection of th
 
 *Version française : [README.md](README.md)*
 
+## Ctrl+Alt+T and pronunciation (new in 1.4.0)
+
+Copy a text anywhere then Ctrl+Alt+T: it gets translated; the 🔊 buttons read it aloud.
+
 ## Usage
 
 - Type or paste text on the left: the translation appears on the right 0.7 seconds after your last keystroke. The character count is shown under the text.
@@ -13,6 +17,12 @@ Translates text between 16 languages as you type, with automatic detection of th
 - **Copy** puts the translation on the clipboard.
 
 Languages: French, English, Spanish, German, Italian, Portuguese, Dutch, Japanese, Korean, Chinese, Russian, Arabic, Polish, Turkish, Swedish and Ukrainian.
+
+## Global shortcut and pronunciation (1.4.0)
+
+In any app, copy a text (Ctrl+C) then press **Ctrl+Alt+T**: NeoDex comes to the front, opens the Translator with that text and translates it. The **Paste and translate** button does the same from the Translator. Two permissions must be accepted: “Global shortcuts” and “Clipboard” (only read when you ask).
+
+The **🔊** buttons read the text and its translation aloud, with the voices installed in Windows (Settings › Time & language › Speech to add more).
 
 ## How it works
 

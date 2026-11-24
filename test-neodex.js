@@ -11,5 +11,10 @@ module.exports = async ({ pj, sleep }) => {
   const over = await pj(`[...document.querySelectorAll('.appWrap *')].filter(e => e.getBoundingClientRect().right > innerWidth + 1).length`);
   if (over) throw new Error(over + ' élément(s) débordent à droite');
   await pj(`document.getElementById('trSwap').click(), 0`);
-  return 'zones de ' + r.w + '×' + r.h + ' px, texte ' + r.font + ' px';
+  // le texte copié arrive dans la zone (sans traduire en ligne) ; les boutons Coller et Écouter sont là
+  const f = await pj(`(() => { const t = [...document.querySelectorAll('.appWrap')].map(w => w.parentElement).find(v => v.__tr).__tr; t.trFill('Bonjour tout le monde', false);
+    return { v: document.getElementById('trIn').value, n: document.getElementById('trCount').textContent, b: ['trPaste', 'trSayIn', 'trSayOut'].every(id => document.getElementById(id)) }; })()`);
+  if (f.v !== 'Bonjour tout le monde' || !/21/.test(f.n) || !f.b) throw new Error('texte copié : ' + JSON.stringify(f));
+  await pj(`(() => { const i = document.getElementById('trIn'); i.value = ''; document.getElementById('trCount').textContent = ''; return 0; })()`);
+  return 'texte copié repris, boutons Coller et Écouter · zones de ' + r.w + '×' + r.h + ' px, texte ' + r.font + ' px';
 };
